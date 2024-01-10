@@ -1,12 +1,15 @@
 <script setup>
-import { RouterView } from 'vue-router'
+import Menu from '@/components/Menu.vue'
+import Header from '@/components/Header.vue'
+import MainLayout from '@/components/MainLayout.vue'
 
 </script>
 
 <template>
   <img src="../src/assets/background-image.jpg" class="background-image">
-  <div class="content"></div>
-  <RouterView />
+  <Menu></Menu>
+  <Header></Header>
+  <MainLayout></MainLayout>
 </template>
 
 <style scoped>
@@ -17,12 +20,5 @@ import { RouterView } from 'vue-router'
   width: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-.content {
-  background-color: white;
-  margin-top: 60vh;
-  width: 100%;
-  height: 100vh;
 }
 </style>
