@@ -5,7 +5,7 @@
 <template>
   <div class="menu-container">
     <span class="name">GEZHIHENG</span>
-    <button class="nav-btn">show more</button>
+    <button class="nav-btn"></button>
     <ul class="list">
       <li>首页</li>
       <li>关于</li>
@@ -17,6 +17,8 @@
 
 <style scoped>
 * {
+  margin: 0;
+  padding: 0;
   color: #4a4a4a;
   font-size: 1.1em;
 }
@@ -64,6 +66,14 @@
     }
 
     .nav-btn {
+      background-image: url('../assets/menu-btn.svg');
+      background-size: cover; /* 确保SVG图标覆盖整个按钮 */
+      background-repeat: no-repeat; /* 防止SVG图标重复显示 */
+      background-color: transparent;
+      border: none; /* 可以去除按钮边框 */
+      cursor: pointer; /* 添加指针样式 */
+      width: 24px;
+      height: 24px;
       display: block;
       margin: 8px 16px 8px 0;
     }

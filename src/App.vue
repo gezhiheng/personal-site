@@ -43,7 +43,7 @@ import MainLayout from '@/components/MainLayout.vue'
   z-index: 1;
 }
 .header {
-  margin-top: 20vh; 
+  height: 100vh;
 }
 .main-layout {
   position: absolute;
@@ -51,5 +51,11 @@ import MainLayout from '@/components/MainLayout.vue'
   left: 0;
   width: 100%;
   height: 200vh;
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    margin-top: 10vh; 
+  }
 }
 </style>

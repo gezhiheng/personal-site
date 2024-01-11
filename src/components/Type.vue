@@ -27,12 +27,12 @@ onMounted(() => {
 <style scoped>
 * {
   color: #4a4a4a;
-  font-size: 1.8em;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 992px) {
   * {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 </style>
