@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'alibaba';
+}
+
+:root {
+  --primary-blue: #42cdf6;
+  --primary-yellow: #ffc401;
+}
+
+@font-face {
+  font-family: 'alibaba';
+  src: url('../src/assets/fonts/AlibabaPuHuiTi-3-85-Bold/AlibabaPuHuiTi-3-85-Bold.eot');
+  src: url('../src/assets/fonts/AlibabaPuHuiTi-3-85-Bold/AlibabaPuHuiTi-3-85-Bold.otf');
+  src: url('../src/assets/fonts/AlibabaPuHuiTi-3-85-Bold/AlibabaPuHuiTi-3-85-Bold.ttf');
+  src: url('../src/assets/fonts/AlibabaPuHuiTi-3-85-Bold/AlibabaPuHuiTi-3-85-Bold.woff');
+  src: url('../src/assets/fonts/AlibabaPuHuiTi-3-85-Bold/AlibabaPuHuiTi-3-85-Bold.woff2');
+}

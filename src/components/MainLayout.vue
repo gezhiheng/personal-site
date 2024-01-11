@@ -6,4 +6,11 @@
   <div class="container"></div>
 </template>
 
-<style scoped src="@/style/main-layout.css"></style>
+<style scoped>
+.container {
+  background-color: white;
+  margin-top: 60vh;
+  width: 100%;
+  height: 100vh;
+}
+</style>
