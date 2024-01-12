@@ -12,7 +12,8 @@
     "typeit": "^8.8.0",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5",
-    "vue-typed-js": "^0.1.2"
+    "vue-typed-js": "^0.1.2",
+    "vue3-lottie": "^3.2.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",

@@ -19,7 +19,7 @@
 * {
   margin: 0;
   padding: 0;
-  color: #4a4a4a;
+  color: var(--primary-text);
   font-size: 1.1em;
 }
 
@@ -66,7 +66,7 @@
     }
 
     .nav-btn {
-      background-image: url('../assets/menu-btn.svg');
+      background-image: url('@/assets/menu-btn.svg');
       background-size: cover; /* 确保SVG图标覆盖整个按钮 */
       background-repeat: no-repeat; /* 防止SVG图标重复显示 */
       background-color: transparent;

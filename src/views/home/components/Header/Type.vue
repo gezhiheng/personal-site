@@ -6,8 +6,8 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import TypeIt from 'typeit'
-const text = ref(null)
 
+const text = ref(null)
 onMounted(() => {
   new (TypeIt)(text.value, {
       strings: ['打打游戏。', '听听歌。', '看看NBA。', '摸摸鱼。'],
@@ -25,14 +25,14 @@ onMounted(() => {
 </script>
   
 <style scoped>
-* {
-  color: #4a4a4a;
-  font-size: 1em;
+span {
+  color: var(--primary-text);
+  font-size: 3.5em;
 }
 
 @media screen and (max-width: 992px) {
-  * {
-    font-size: 1em;
+  span {
+    font-size: 1.3em;
   }
 }
 </style>
