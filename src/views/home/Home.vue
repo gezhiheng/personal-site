@@ -50,4 +50,4 @@ import Contact from './components/contact'
   min-height: 85vh;
   z-index: 0;
 }
-</style>@/components/contact@/components/about@/views/home/components/about@/views/home/components/blog@/views/home/components/contact
+</style>
