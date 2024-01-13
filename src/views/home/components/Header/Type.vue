@@ -11,7 +11,7 @@ const text = ref(null)
 onMounted(() => {
   new (TypeIt)(text.value, {
       strings: ['打打游戏。', '听听歌。', '看看NBA。', '摸摸鱼。'],
-      cursorChar: "<span class='cursorChar'>_<span>",
+      cursorChar: "<span>_<span>",
       cursorSpeed: 500,
       speed: 100,
       deleteSpeed: 60,

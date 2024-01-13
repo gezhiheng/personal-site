@@ -45,14 +45,14 @@ span {
       width: 300px;
       border-radius: 50%;
       overflow: hidden;
-      margin: 0 0 0 220px;
+      margin: 0 0 0 120px;
       border: 4px solid var(--primary-blue);
     }
 
     &::before {
       content: "";
       position: absolute;
-      margin: 0 0 0 220px;
+      margin: 0 0 0 120px;
       width: 300px;
       height: 300px;
       border: 4px solid var(--primary-blue);
