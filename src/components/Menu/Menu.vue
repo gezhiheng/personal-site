@@ -9,7 +9,7 @@
     <ul class="list">
       <li>首页</li>
       <li>关于</li>
-      <li>文章</li>
+      <li>博客</li>
       <li>找我</li>
     </ul>
   </div>
