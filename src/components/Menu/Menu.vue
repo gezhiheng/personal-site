@@ -42,6 +42,8 @@ const menuBtnOnclick = () => {
 
 .horizontal-nav {
   width: 100%;
+  position: fixed;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
