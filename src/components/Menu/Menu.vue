@@ -1,12 +1,28 @@
 <script setup>
+import { ref } from 'vue'
 
+const showVerticalMenu = ref(false)
+const menuBtnOnclick = () => {
+  showVerticalMenu.value = !showVerticalMenu.value
+}
 </script>
 
 <template>
-  <div class="menu-container">
+  <div class="horizontal-nav">
     <span class="name">GEZHIHENG</span>
-    <button class="nav-btn"></button>
-    <ul class="list">
+    <ul class="horizontal-list">
+      <li>首页</li>
+      <li>关于</li>
+      <li>博客</li>
+      <li>找我</li>
+    </ul>
+  </div>
+  <div class="vertical-nav">
+    <div class="nav">
+      <span class="name">GEZHIHENG</span>
+      <button class="nav-btn" :class="{ 'nav-close-btn': showVerticalMenu }" @click="menuBtnOnclick"></button>
+    </div>
+    <ul v-if="showVerticalMenu" class="vertical-list">
       <li>首页</li>
       <li>关于</li>
       <li>博客</li>
@@ -21,14 +37,16 @@
   padding: 0;
   color: var(--primary-text);
   font-size: 1.1em;
+  list-style: none;
 }
 
-.menu-container {
+.horizontal-nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--primary-bg-color);
+  box-shadow: var(--shadow);
   
   .name {
     margin: 0 0 0 36px;
@@ -38,7 +56,7 @@
     display: none;
   }
   
-  .list {
+  .horizontal-list {
     display: flex;
     flex-direction: row;
 
@@ -58,11 +76,43 @@
   }
 }
 
+.vertical-nav {
+  display: none;
+}
+
 @media screen and (max-width: 992px) {
-  .menu-container {
+  .horizontal-nav {
+    display: none;
+  }
+
+  .vertical-nav {
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: var(--primary-bg-color);
+    box-shadow: var(--shadow);
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     .name {
       margin: 0 0 0 16px;
+    }
+
+    .vertical-list {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 6px;
+      li {
+        padding: 3px;
+        text-align: center;
+      }
+      li:hover {
+        color: var(--primary-blue);
+      }
     }
 
     .nav-btn {
@@ -78,8 +128,8 @@
       margin: 8px 16px 8px 0;
     }
 
-    .list {
-      display: none;
+    .nav-close-btn {
+      background-image: url('@/assets/close.svg');
     }
   }
 }
