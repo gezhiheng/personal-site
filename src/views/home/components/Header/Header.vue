@@ -5,21 +5,23 @@ import DownAnimate from './DownAnimate.vue'
 </script>
 
 <template>
-  <div class="header-container">
-    <div class="intro">
-      <span>我是葛智恒，</span>
-      <span>或者叫我Henry，主用</span>
-      <span class="vue-text">
-        Vue.js。
-      </span>
-      <span>喜欢篮球 ⛹️，</span>
-      <Type class="type-animate"></Type>
+  <div class="header">
+    <div class="content">
+      <div class="intro">
+        <span>我是葛智恒，</span>
+        <span>或者叫我Henry，主用</span>
+        <span class="vue-text">
+          Vue.js。
+        </span>
+        <span>喜欢篮球 ⛹️，</span>
+        <Type class="type-animate"></Type>
+      </div>
+      <div class="avatar">
+        <img class="curry" src="@/assets/images/avatar.jpg" >
+      </div>
     </div>
-    <div class="avatar">
-      <img class="curry" src="@/assets/images/avatar.jpg" >
-    </div>
+    <DownAnimate></DownAnimate>
   </div>
-  <DownAnimate class="down-animate"></DownAnimate>
 </template>
 
 <style scoped>
@@ -27,11 +29,22 @@ span {
   color: var(--primary-text);
 }
 
-.header-container {
-  margin-top: 18vh;
+.header {
+  background-image: url('../src/assets/background.svg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+
+  .content {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+    margin-top: 15vh;
+  }
 
   .intro span {
     font-size: 3.5em;
@@ -39,8 +52,6 @@ span {
   }
 
   .avatar {
-    margin: auto;
-
     .curry {
       width: 300px;
       border-radius: 50%;
@@ -69,19 +80,22 @@ span {
   margin-top: 0;
 }
 
-.down-animate {
-  margin-top: 50px;
-}
-
 @media screen and (max-width: 992px) {
   * {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
-  .header-container {
-    margin-top: 10vh;
+  .header {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+
+    .content {
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center;
+      margin-top: 15vh;
+    }
 
     .intro span {
       font-size: 1.3em;

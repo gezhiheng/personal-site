@@ -20,8 +20,6 @@ import Contact from './components/contact'
 
 <style scoped>
 .background {
-  background-image: url('../src/assets/background.svg');
-  background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,10 +40,5 @@ import Contact from './components/contact'
   width: 100%;
   right: 0;
   z-index: 1;
-}
-.header {
-  margin-top: 15vh;
-  min-height: 85vh;
-  z-index: 0;
 }
 </style>
