@@ -21,4 +21,5 @@
   src: url('../src/assets/fonts/AlibabaPuHuiTi-3-85-Bold/AlibabaPuHuiTi-3-85-Bold.ttf');
   src: url('../src/assets/fonts/AlibabaPuHuiTi-3-85-Bold/AlibabaPuHuiTi-3-85-Bold.woff');
   src: url('../src/assets/fonts/AlibabaPuHuiTi-3-85-Bold/AlibabaPuHuiTi-3-85-Bold.woff2');
+  font-display: swap;
 }
