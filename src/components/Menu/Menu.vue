@@ -49,6 +49,7 @@ const menuBtnOnclick = () => {
   justify-content: space-between;
   background-color: var(--primary-bg-color);
   box-shadow: var(--shadow);
+  z-index: 1000;
   
   .name {
     margin: 0 0 0 36px;
@@ -92,7 +93,7 @@ const menuBtnOnclick = () => {
     display: block;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
     background-color: var(--primary-bg-color);
     box-shadow: var(--shadow);
     .nav {

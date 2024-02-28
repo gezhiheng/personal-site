@@ -39,6 +39,5 @@ import Contact from './components/contact'
 .menu {
   width: 100%;
   right: 0;
-  z-index: 1;
 }
 </style>
