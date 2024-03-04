@@ -30,7 +30,7 @@ span {
 }
 
 .header {
-  background-image: url('../src/assets/background.svg');
+  background-image: url('./background.svg');
   background-size: cover;
   width: 100%;
   height: 100vh;
