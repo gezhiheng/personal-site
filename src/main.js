@@ -9,4 +9,5 @@ const app = createApp(App)
 app.use(Vue3Lottie)
 app.use(router)
 app.mount('#app')
-console.log('main.js')
+
+console.log('%c Welcome to Henry`s Site! ','color:#1e80ff;font-size:20px;background:#fff;padding:8px;')

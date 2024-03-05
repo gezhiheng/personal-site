@@ -9,7 +9,7 @@ const menuBtnOnclick = () => {
 
 <template>
   <div class="horizontal-nav">
-    <span class="name">GEZHIHENG</span>
+    <span class="name">HENRY<span class="dot">.</span>GE</span>
     <ul class="horizontal-list">
       <li>首页</li>
       <li>关于</li>
@@ -19,7 +19,7 @@ const menuBtnOnclick = () => {
   </div>
   <div class="vertical-nav">
     <div class="nav">
-      <span class="name">GEZHIHENG</span>
+      <span class="name">HENRY<span class="dot">.</span>GE</span>
       <button class="nav-btn" :class="{ 'nav-close-btn': showVerticalMenu }" @click="menuBtnOnclick"></button>
     </div>
     <ul v-if="showVerticalMenu" class="vertical-list">
@@ -40,6 +40,10 @@ const menuBtnOnclick = () => {
   list-style: none;
 }
 
+.dot {
+  color: var(--primary-blue);
+}
+
 .horizontal-nav {
   width: 100%;
   position: fixed;
@@ -52,6 +56,7 @@ const menuBtnOnclick = () => {
   z-index: 1000;
   
   .name {
+    font-size: 1.5em;
     margin: 0 0 0 36px;
   }
 

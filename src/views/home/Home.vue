@@ -1,8 +1,7 @@
 <script setup>
 import Menu from '@/components/Menu'
 import Header from './components/Header'
-import Blog from './components/blog'
-import Contact from './components/contact'
+import DocsLinks from './components/DocsLinks'
 
 </script>
 
@@ -11,9 +10,7 @@ import Contact from './components/contact'
   <div class="home-container">
     <Menu class="menu"></Menu>
     <Header class="header"></Header>
-    <About></About>
-    <Blog></Blog>
-    <Contact></Contact>
+    <DocsLinks />
   </div>
 </template>
 
@@ -39,4 +36,4 @@ import Contact from './components/contact'
   width: 100%;
   right: 0;
 }
-</style>
+</style>./components/DocsLinks
