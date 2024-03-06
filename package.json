@@ -5,13 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run vite\" \"npm run docs:dev\"",
+    "build": "concurrently \"npm run vite:build\" \"npm run docs:build\"",
     "docs:dev": "vuepress-vite dev docs",
     "docs:build": "vuepress-vite build docs",
-    "build": "vite build",
+    "vite:build": "vite build",
     "preview": "vite preview",
-    "vite": "vite",
-    "docs:clean-dev": "vuepress-vite dev docs --clean-cache",
-    "docs:update-package": "npx vp-update"
+    "vite": "vite"
   },
   "dependencies": {
     "typeit": "^8.8.0",
