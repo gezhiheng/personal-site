@@ -20,7 +20,7 @@ import DownAnimate from './DownAnimate.vue'
         <img class="curry" src="@/assets/images/avatar.jpg" >
       </div>
     </div>
-    <DownAnimate></DownAnimate>
+    <DownAnimate class="down-animate"></DownAnimate>
   </div>
 </template>
 
@@ -35,6 +35,7 @@ span {
   width: 100%;
   height: 100vh;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
 
@@ -43,11 +44,11 @@ span {
     flex-direction: row; 
     align-items: center; 
     justify-content: center;
-    margin-top: 15vh;
+    margin-bottom: 15vh;
   }
 
   .intro span {
-    font-size: 3.5em;
+    font-size: 3.8em;
     display: block;
   }
 
@@ -74,6 +75,13 @@ span {
       z-index: 0;
     }
   }
+
+  .down-animate {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%);
+  }
 }
 
 .type-animate {
@@ -94,7 +102,6 @@ span {
       flex-direction: column; 
       align-items: center; 
       justify-content: center;
-      margin-top: 15vh;
     }
 
     .intro span {
@@ -128,10 +135,6 @@ span {
 
   .type-animate {
     margin-top: 0;
-  }
-
-  .down-animate {
-    margin-top: -60px;
   }
 }
 
