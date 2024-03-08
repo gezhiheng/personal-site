@@ -1,7 +1,7 @@
 <script setup>
 import Menu from '@/components/Menu'
 import Header from './components/Header'
-import DocsLinks from './components/DocsLinks'
+import BlogInfoCards from './components/BlogInfoCards'
 
 </script>
 
@@ -10,7 +10,7 @@ import DocsLinks from './components/DocsLinks'
   <div class="home-container">
     <Menu class="menu"></Menu>
     <Header class="header"></Header>
-    <DocsLinks />
+    <BlogInfoCards />
   </div>
 </template>
 
@@ -36,4 +36,4 @@ import DocsLinks from './components/DocsLinks'
   width: 100%;
   right: 0;
 }
-</style>./components/DocsLinks
+</style>./components/BlogInfoCards
