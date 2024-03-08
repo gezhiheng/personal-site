@@ -4,28 +4,25 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run vite\" \"npm run docs:dev\"",
-    "build": "concurrently \"npm run vite:build\" \"npm run docs:build\"",
-    "docs:dev": "vuepress-vite dev docs",
-    "docs:build": "vuepress-vite build docs",
-    "vite:build": "vite build",
-    "preview": "vite preview",
-    "vite": "vite"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
+    "md-editor-v3": "^4.12.1",
+    "scrollreveal": "^4.0.9",
     "typeit": "^8.8.0",
-    "vue": "^3.3.11",
+    "vue": "^3.4.21",
     "vue-router": "^4.2.5",
-    "vue3-lottie": "^3.2.0"
+    "vue3-lottie": "^3.2.0",
+    "vuetify": "^3.5.8"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
     "@vuepress/bundler-vite": "2.0.0-rc.8",
     "@vuepress/theme-default": "^2.0.0-rc.18",
-    "concurrently": "^8.2.2",
     "vite": "^5.0.11",
     "vuepress": "2.0.0-rc.8",
-    "vue": "^3.4.16",
     "vuepress-theme-hope": "2.0.0-rc.27"
   }
 }
