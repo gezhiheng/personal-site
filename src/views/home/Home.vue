@@ -36,4 +36,4 @@ import BlogInfoCards from './components/BlogInfoCards'
   width: 100%;
   right: 0;
 }
-</style>./components/BlogInfoCards
+</style>
